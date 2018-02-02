@@ -1,9 +1,3 @@
-/*
- * @Author: yanxiaodi 
- * @Date: 2018-02-02 16:55:41 
- * @Last Modified by: didilinkin@vip.qq.com
- * @Last Modified time: 2018-02-02 17:00:48
- */
 const tsImportPluginFactory = require('ts-import-plugin')
 const { getLoader } = require("react-app-rewired");
 const rewireLess = require('react-app-rewire-less');

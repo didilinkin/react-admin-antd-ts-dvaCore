@@ -1,27 +1,25 @@
 {
-  "name": "antd-demo-ts",
+  "name": "react_ts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^3.1.6",
+    "antd": "^3.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts-ts": "2.13.0"
+    "react-scripts-ts": "2.8.0"
   },
   "scripts": {
     "start": "react-app-rewired start --scripts-version react-scripts-ts",
     "build": "react-app-rewired build --scripts-version react-scripts-ts",
-    "test": "react-app-rewired test --env=jsdom --scripts-version react-scripts-ts",
-    "eject": "react-scripts-ts eject"
+    "test": "react-app-rewired test --env=jsdom --scripts-version react-scripts-ts"
   },
   "devDependencies": {
-    "@types/jest": "^22.1.1",
-    "@types/node": "^9.4.0",
-    "@types/react": "^16.0.36",
+    "@types/jest": "^22.0.1",
+    "@types/node": "^9.3.0",
+    "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
     "react-app-rewire-less": "^2.1.0",
-    "react-app-rewired": "^1.4.1",
-    "ts-import-plugin": "^1.4.3",
-    "typescript": "^2.7.1"
+    "react-app-rewired": "^1.4.0",
+    "ts-import-plugin": "^1.4.3"
   }
 }
