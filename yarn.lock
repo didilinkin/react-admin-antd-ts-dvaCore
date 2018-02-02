@@ -138,7 +138,7 @@ ansi-styles@^3.0.0, ansi-styles@^3.1.0:
   dependencies:
     color-convert "^1.9.0"
 
-antd@^3.1.1:
+antd@^3.1.6:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/antd/-/antd-3.1.6.tgz#042e9f4a13e304a25283e59d999d09cb85c0c8d4"
   dependencies:
@@ -4970,7 +4970,7 @@ react-app-rewire-less@^2.1.0:
     less "^2.7.3"
     less-loader "^4.0.5"
 
-react-app-rewired@^1.4.0:
+react-app-rewired@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/react-app-rewired/-/react-app-rewired-1.4.1.tgz#e4cca962590a9893710664728bb5ee02f3976dbe"
   dependencies:
