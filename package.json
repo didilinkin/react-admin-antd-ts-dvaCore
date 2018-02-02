@@ -3,10 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "anime": "^0.1.2",
     "antd": "^3.1.6",
+    "axios": "^0.17.1",
+    "dva-core": "^1.1.0",
+    "history": "^4.7.2",
+    "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts-ts": "2.13.0"
+    "react-draft-wysiwyg": "^1.12.7",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-router-redux-dom-link": "^0.3.0",
+    "react-scripts-ts": "2.13.0",
+    "recharts": "^1.0.0-beta.10",
+    "screenfull": "^3.3.2",
+    "store": "^2.0.12",
+    "styled-components": "^3.1.5"
   },
   "scripts": {
     "start": "react-app-rewired start --scripts-version react-scripts-ts",
