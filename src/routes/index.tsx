@@ -2,10 +2,11 @@
  * @Author: yanxiaodi
  * @Date: 2018-02-04 18:56:21
  * @Last Modified by: yanxiaodi
- * @Last Modified time: 2018-02-04 20:24:18
+ * @Last Modified time: 2018-02-05 02:01:11
  * @Description root route
  */
 /* tslint:disable */
+
 import * as React from 'react'
 import { renderRoutes } from 'react-router-config'
 import {
@@ -24,9 +25,7 @@ const rootRoutes = [{
   routes: configRoutes,
 }]
 
-// export default rootRoutes
-
-class Root extends React.Component {
+class RootRouter extends React.Component {
   // getChildContext
   render () {
     return (
@@ -37,4 +36,4 @@ class Root extends React.Component {
   }
 }
 
-export default Root
+export default RootRouter
