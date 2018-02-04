@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-redux": "^5.0.14",
     "anime": "^0.1.2",
     "antd": "^3.1.6",
     "axios": "^0.17.1",
+    "draft-js": "^0.10.5",
     "dva-core": "^1.1.0",
     "history": "^4.7.2",
     "moment": "^2.20.1",
@@ -20,6 +22,7 @@
     "react-router-redux-dom-link": "^0.3.0",
     "react-scripts-ts": "2.13.0",
     "recharts": "^1.0.0-beta.10",
+    "redux": "^3.7.2",
     "screenfull": "^3.3.2",
     "store": "^2.0.12",
     "styled-components": "^3.1.5"
@@ -34,6 +37,8 @@
     "@types/node": "^9.4.0",
     "@types/react": "^16.0.36",
     "@types/react-dom": "^16.0.3",
+    "immutable": "3.7.4",
+    "jquery": "^3.3.1",
     "react-app-rewire-less": "^2.1.0",
     "react-app-rewired": "^1.4.1",
     "ts-import-plugin": "^1.4.3",

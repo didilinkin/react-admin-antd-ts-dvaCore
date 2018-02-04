@@ -1,6 +1,5 @@
-import * as React from 'react';
-import { Button } from 'antd';
-import './App.css';
+import * as React from 'react'
+import { Button } from 'antd'
 
 class App extends React.Component {
   render() {
@@ -8,8 +7,8 @@ class App extends React.Component {
       <div className="App">
         <Button type="primary">Button</Button>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
