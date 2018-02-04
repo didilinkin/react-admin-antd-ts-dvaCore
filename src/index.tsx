@@ -1,10 +1,11 @@
 /* tslint:disable */
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { Provider, connect } from 'react-redux'
+import { Provider } from 'react-redux'
 import registerServiceWorker from './registerServiceWorker'
 
 import Count from './count'
+import Root from './routes'
 
 const { create } = require('dva-core')
 
@@ -31,21 +32,6 @@ const dva = (options: any) => {
   return dva
 }
 
-// Router: 临时测试
-// import Router from 'routes'
-const Router = connect(({ count }: any) => ({
-  count
-}))(function(props: any) {
-  return (
-    <div>
-      {/* <TestError /> */}
-      <h2>{ props.count }</h2>
-      <button key="add" onClick={() => { props.dispatch({type: 'count/add'})}}>+</button>
-      <button key="minus" onClick={() => { props.dispatch({type: 'count/minus'})}}>-</button>
-    </div>
-  )
-})
-
 // Model
 const app = dva({
   models: [Count],
@@ -54,7 +40,7 @@ const app = dva({
   },
 })
 
-const App = app.start(<Router />)
+const App = app.start(<Root />)
 
 ReactDOM.render(
   <App />,
