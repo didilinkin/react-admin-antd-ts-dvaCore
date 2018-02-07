@@ -11,15 +11,15 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 // import { Link } from 'react-router-dom'
 
-const Count = connect(({ count }: any) => ({
-  count
+const Count = connect(({ countModel }: any) => ({
+  countModel
 }))(function(props: any) {
   return (
     <div>
       <h2>计数器</h2>
-      <h2>{ props.count }</h2>
-      <button key="add" onClick={() => { props.dispatch({type: 'count/add'})}}>+</button>
-      <button key="minus" onClick={() => { props.dispatch({type: 'count/minus'})}}>-</button>
+      <h2>{ props.countModel }</h2>
+      <button key="add" onClick={() => { props.dispatch({type: 'countModel/add'})}}>+</button>
+      <button key="minus" onClick={() => { props.dispatch({type: 'countModel/minus'})}}>-</button>
 
       <br />
 
