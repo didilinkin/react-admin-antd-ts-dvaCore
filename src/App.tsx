@@ -22,9 +22,9 @@ const app = dvaCore({
 
 console.dir(app)
 
-const store = app._store.getState()
+// const store = app._store.getState()
 
-console.dir(store)
+// console.dir(store)
 
 const App = app.start(<RootRouter />)
 
