@@ -17,9 +17,9 @@ import {
 } from 'react-router-redux' // push
 
 import createHistory from 'history/createBrowserHistory'
-import { Route } from 'react-router-dom'
+// import { Route } from 'react-router-dom'
 
-import Count from '../modules/count'
+// import Count from '../modules/count'
 
 const { create } = require('dva-core')
 
@@ -64,14 +64,16 @@ const dvaCore = (options: any) => {
 
   dvaCore.start = (container: any): any => () => (
     <Provider store={store}>
-      {/* {container} */}
+      <ConnectedRouter history={history}>
+        {container}
+      </ConnectedRouter>
 
       { /* ConnectedRouter will use the store from Provider automatically */ }
-      <ConnectedRouter history={history}>
+      {/* <ConnectedRouter history={history}>
         <div>
           <Route exact path="/" component={Count}/>
         </div>
-      </ConnectedRouter>
+      </ConnectedRouter> */}
     </Provider>
   )
 
