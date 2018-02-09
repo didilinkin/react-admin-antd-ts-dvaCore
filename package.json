@@ -1,5 +1,6 @@
 {
   "name": "react_ts",
+  "author": "yanxiaodi didilinkin@vip.qq.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,11 +8,13 @@
     "@types/react-router-config": "^1.0.5",
     "@types/react-router-dom": "^4.2.3",
     "@types/react-router-redux": "^5.0.11",
+    "@types/redux-logger": "^3.0.5",
     "anime": "^0.1.2",
     "antd": "^3.1.6",
     "axios": "^0.17.1",
     "draft-js": "^0.10.5",
     "dva-core": "^1.1.0",
+    "dva-loading": "^1.0.4",
     "history": "^4.7.2",
     "moment": "^2.20.1",
     "react": "^16.2.0",
@@ -26,6 +29,7 @@
     "react-scripts-ts": "2.13.0",
     "recharts": "^1.0.0-beta.10",
     "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
     "screenfull": "^3.3.2",
     "store": "^2.0.12",
     "styled-components": "^3.1.5"
