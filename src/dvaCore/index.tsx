@@ -1,24 +1,23 @@
 /*
  * @Author: yanxiaodi
- * @Date: 2018-02-09 20:50:03
+ * @Date: 2018-02-09 23:01:58
  * @Last Modified by: yanxiaodi
- * @Last Modified time: 2018-02-09 22:29:15
+ * @Last Modified time: 2018-02-09 23:04:14
  */
 // tslint:disable
 
 import * as React from 'react'
 import { Provider } from 'react-redux'
-
-const createLoading = require('dva-loading') // Typescript 无法找到 .d.ts 文件时, 使用这个方法
-
+import createHistory from 'history/createBrowserHistory'
 import {
   ConnectedRouter,
   routerReducer as routing,
   routerMiddleware,
 } from 'react-router-redux'
-import createHistory from 'history/createBrowserHistory'
 
 const { create } = require('dva-core')
+const createLoading = require('dva-loading') // Typescript 无法找到 .d.ts 文件
+const reduxUnhandledAction = require('redux-unhandled-action').default
 
 const dvaCore = (options: any) => {
   const history = options.history || createHistory()
@@ -32,6 +31,10 @@ const dvaCore = (options: any) => {
     return history
   }
 
+  const callback = (action: any) => {
+    console.error(`${action} didn't lead to creation of a new state object`)
+  } // 开发过程中，若 Action 未使 State 发生变化则发出警告
+
   const createOpts = {
     initialReducer: {
       routing,
@@ -39,6 +42,7 @@ const dvaCore = (options: any) => {
     setupMiddlewares(middlewares: any) {
       return [
         routerMiddleware(history),
+        reduxUnhandledAction(callback),
         ...middlewares,
       ]
     },
@@ -64,8 +68,9 @@ const dvaCore = (options: any) => {
   )
   dvaCore.getStore = () => store
 
-
   dvaCore.use(createLoading())
+
+  console.dir(dvaCore)
 
   return dvaCore
 }

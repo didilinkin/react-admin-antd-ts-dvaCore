@@ -3697,6 +3697,10 @@ lodash.isfunction@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/lodash.isfunction/-/lodash.isfunction-3.0.8.tgz#4db709fc81bc4a8fd7127a458a5346c5cdce2c6b"
 
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+
 lodash.isstring@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
@@ -5578,6 +5582,12 @@ redux-logger@^3.0.6:
 redux-saga@^0.15.4:
   version "0.15.6"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.15.6.tgz#8638dc522de6c6c0a496fe8b2b5466287ac2dc4d"
+
+redux-unhandled-action@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/redux-unhandled-action/-/redux-unhandled-action-1.3.0.tgz#d25acb478a429957bc297298ec9f4bed489fd0e4"
+  dependencies:
+    lodash.isplainobject "^4.0.6"
 
 redux@^3.6.0, redux@^3.7.1, redux@^3.7.2:
   version "3.7.2"
