@@ -2,18 +2,36 @@
  * @Author: yanxiaodi
  * @Date: 2018-02-05 00:51:04
  * @Last Modified by: yanxiaodi
- * @Last Modified time: 2018-02-10 14:32:35
+ * @Last Modified time: 2018-02-10 15:19:22
  */
+/* tslint:disable */
 
-// import SImmutable from 'seamless-immutable'
+import * as SImmutable from 'seamless-immutable'
+
+console.dir(SImmutable)
+
+const initState = SImmutable({
+  countStr: '初始值',
+  countNum: 0,
+})
 
 const countModel = {
   namespace: 'countModel',
-  state: 0,
+  state: initState,
   reducers: {
-      add  (count: number) { return count + 1 },
-      minus(count: number) { return count - 1 },
-  },
+    add(state: any) {
+      return state.merge({
+        countStr: '增量',
+        countNum: state.countNum + 1,
+      })
+    },
+    minus(state: any) {
+      return state.merge({
+        countStr: '减量',
+        countNum: state.countNum - 1,
+      })
+    },
+  }
 }
 
 export default [
