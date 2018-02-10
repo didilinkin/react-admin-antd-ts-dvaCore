@@ -2,7 +2,7 @@
  * @Author: yanxiaodi
  * @Date: 2018-02-09 23:01:58
  * @Last Modified by: yanxiaodi
- * @Last Modified time: 2018-02-09 23:04:14
+ * @Last Modified time: 2018-02-10 10:55:36
  */
 // tslint:disable
 
@@ -70,8 +70,7 @@ const dvaCore = (options: any) => {
 
   dvaCore.use(createLoading())
 
-  console.dir(dvaCore)
-
+  // console.dir(dvaCore)
   return dvaCore
 }
 
