@@ -2,7 +2,7 @@
  * @Author: yanxiaodi
  * @Date: 2018-02-09 21:06:51
  * @Last Modified by: yanxiaodi
- * @Last Modified time: 2018-02-09 21:35:29
+ * @Last Modified time: 2018-02-10 14:20:19
  */
 // tslint:disable
 
@@ -12,6 +12,7 @@ import { createLogger } from 'redux-logger'
 
 import dvaCore from './dvaCore'
 import rootModel from './models'
+
 import RootRouter from './routes'
 
 const app = dvaCore({
