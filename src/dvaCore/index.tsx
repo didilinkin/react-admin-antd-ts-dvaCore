@@ -2,7 +2,7 @@
  * @Author: yanxiaodi
  * @Date: 2018-02-09 23:01:58
  * @Last Modified by: yanxiaodi
- * @Last Modified time: 2018-02-10 10:55:36
+ * @Last Modified time: 2018-02-13 10:43:11
  */
 // tslint:disable
 
@@ -14,6 +14,8 @@ import {
   routerReducer as routing,
   routerMiddleware,
 } from 'react-router-redux'
+import { LocaleProvider } from 'antd'
+import zhCN from 'antd/lib/locale-provider/zh_CN'
 
 const { create } = require('dva-core')
 const createLoading = require('dva-loading') // Typescript 无法找到 .d.ts 文件
@@ -61,9 +63,11 @@ const dvaCore = (options: any) => {
 
   dvaCore.start = (container: any): any => () => (
     <Provider store={store}>
-      <ConnectedRouter history={history}>
-        {container}
-      </ConnectedRouter>
+      <LocaleProvider locale={zhCN}>
+        <ConnectedRouter history={history}>
+          {container}
+        </ConnectedRouter>
+      </LocaleProvider>
     </Provider>
   )
   dvaCore.getStore = () => store
